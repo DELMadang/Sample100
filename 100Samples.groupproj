@@ -9,6 +9,12 @@
         <Projects Include="ch.002\ch002.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ch.003\ch003.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.004\ch004.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +41,32 @@
     <Target Name="ch002:Make">
         <MSBuild Projects="ch.002\ch002.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ch003">
+        <MSBuild Projects="ch.003\ch003.dproj"/>
+    </Target>
+    <Target Name="ch003:Clean">
+        <MSBuild Projects="ch.003\ch003.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch003:Make">
+        <MSBuild Projects="ch.003\ch003.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch004">
+        <MSBuild Projects="ch.004\ch004.dproj"/>
+    </Target>
+    <Target Name="ch004:Clean">
+        <MSBuild Projects="ch.004\ch004.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch004:Make">
+        <MSBuild Projects="ch.004\ch004.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ch001;ch002"/>
+        <CallTarget Targets="ch001;ch002;ch003;ch004"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ch001:Clean;ch002:Clean"/>
+        <CallTarget Targets="ch001:Clean;ch002:Clean;ch003:Clean;ch004:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ch001:Make;ch002:Make"/>
+        <CallTarget Targets="ch001:Make;ch002:Make;ch003:Make;ch004:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
