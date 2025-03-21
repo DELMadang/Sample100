@@ -22,7 +22,8 @@ begin
     ReadLn(time);
 
     var interest := (principal * rate * time) / 100;
-    WriteLn('단순 이자 총액: ', FormatFloat('#,##0', interest));
+    WriteLn('단순 이자 총액: ', FormatFloat('#,##0', interest));
+
     ReadLn;
   except
     on E: Exception do
