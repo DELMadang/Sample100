@@ -9,15 +9,13 @@ uses
 
 begin
   try
-    WriteLn('숫자를 입력하세요: ');
-    var Number: Integer;
-    ReadLn(Number);
+    WriteLn('문자열을 입력하세요: ');
+    var Text: string;
+    ReadLn(Text);
 
-    var sum := 0;
-    for var i := 1 to Number do
-      sum := sum + i;
-
-    WriteLn('자연수의 합: ', sum);
+    WriteLn('ASCII Code : ');
+    for var i := 1 to Length(Text) do
+      Write(Ord(Text[i]), ' ');
 
     ReadLn;
   except

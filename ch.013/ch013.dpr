@@ -9,15 +9,19 @@ uses
 
 begin
   try
-    WriteLn('숫자를 입력하세요: ');
-    var Number: Integer;
-    ReadLn(Number);
+    WriteLn('문자열을 입력하세요: ');
+    var Text: string;
+    ReadLn(Text);
 
-    var sum := 0;
-    for var i := 1 to Number do
-      sum := sum + i;
+    // 입력한 문자열을 거꾸로 만든다
+    var ReserveText := '';
+    for var i := Length(Text) downto 1 do
+      ReserveText := ReserveText + Text[i];
 
-    WriteLn('자연수의 합: ', sum);
+    if (Text = ReserveText) then
+      WriteLn(Text, ' = ', ReserveText, '=>  True')
+    else
+      WriteLn(Text, ' = ', ReserveText, '=>  False');
 
     ReadLn;
   except
