@@ -11,6 +11,7 @@ function Partition(arr: TArray<Integer>; low, high: Integer): Integer;
 begin
   var pivot := arr[high];
   var i := low - 1;
+
   for var j := low to high do
   begin
     if (arr[j] < pivot) then
@@ -33,18 +34,16 @@ procedure Sort(arr: TArray<Integer>; low, high: Integer);
 begin
   var pivot: Integer;
   if (low < high) then
+  begin
     pivot := Partition(arr, low, high);
 
-  Sort(arr, low, pivot - 1);
-  Sort(arr, pivot + 1, high);
+    Sort(arr, low, pivot - 1);
+    Sort(arr, pivot + 1, high);
+  end;
 end;
 
 begin
   try
-    Write('숫자를 입력하세요: ');
-    var num: Integer;
-    ReadLn(num);
-
     var arr: TArray<Integer> := [10, 7, 8, 9, 1, 5];
     var n := Length(arr);
     Sort(arr, 0, n - 1);
