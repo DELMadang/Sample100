@@ -17,9 +17,9 @@ begin
     var strNum := num.ToString();
     var strSquare := square.ToString();
     if (strSquare.EndsWith(strNum)) then
-      WriteLn(num, 'is Automorphic Number')
+      WriteLn(num, ' is Automorphic Number')
     else
-      WriteLn(num, 'is Not an Automorphic Number');
+      WriteLn(num, ' is Not an Automorphic Number');
 
     ReadLn;
   except
