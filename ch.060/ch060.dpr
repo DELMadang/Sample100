@@ -13,7 +13,7 @@ begin
     var n := High(arr);
     for var i := 0 to n do
     begin
-      for var j := 0 to n do
+      for var j := 0 to n-1 do
       begin
         if (arr[j] > arr[j + 1]) then
         begin
