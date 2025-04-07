@@ -9,12 +9,12 @@ uses
 
 begin
   try
-    Write('숫자를 입력하세요: ');
+    Write('문자를 입력하세요: ');
     var str: string;
     ReadLn(str);
 
     var reversedStr := '';
-    for var i = Length(str) downto 1 do
+    for var i := Length(str) downto 1 do
       reversedStr := reversedStr + str[i];
 
     if SameText(str, reversedStr) then
