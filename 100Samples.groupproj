@@ -243,6 +243,30 @@
         <Projects Include="ch.080\ch080.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ch.081\ch081.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.082\ch082.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.083\ch083.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.084\ch084.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.085\ch085.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.086\ch086.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.087\ch087.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ch.088\ch088.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -971,14 +995,86 @@
     <Target Name="ch080:Make">
         <MSBuild Projects="ch.080\ch080.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ch081">
+        <MSBuild Projects="ch.081\ch081.dproj"/>
+    </Target>
+    <Target Name="ch081:Clean">
+        <MSBuild Projects="ch.081\ch081.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch081:Make">
+        <MSBuild Projects="ch.081\ch081.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch082">
+        <MSBuild Projects="ch.082\ch082.dproj"/>
+    </Target>
+    <Target Name="ch082:Clean">
+        <MSBuild Projects="ch.082\ch082.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch082:Make">
+        <MSBuild Projects="ch.082\ch082.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch083">
+        <MSBuild Projects="ch.083\ch083.dproj"/>
+    </Target>
+    <Target Name="ch083:Clean">
+        <MSBuild Projects="ch.083\ch083.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch083:Make">
+        <MSBuild Projects="ch.083\ch083.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch084">
+        <MSBuild Projects="ch.084\ch084.dproj"/>
+    </Target>
+    <Target Name="ch084:Clean">
+        <MSBuild Projects="ch.084\ch084.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch084:Make">
+        <MSBuild Projects="ch.084\ch084.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch085">
+        <MSBuild Projects="ch.085\ch085.dproj"/>
+    </Target>
+    <Target Name="ch085:Clean">
+        <MSBuild Projects="ch.085\ch085.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch085:Make">
+        <MSBuild Projects="ch.085\ch085.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch086">
+        <MSBuild Projects="ch.086\ch086.dproj"/>
+    </Target>
+    <Target Name="ch086:Clean">
+        <MSBuild Projects="ch.086\ch086.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch086:Make">
+        <MSBuild Projects="ch.086\ch086.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch087">
+        <MSBuild Projects="ch.087\ch087.dproj"/>
+    </Target>
+    <Target Name="ch087:Clean">
+        <MSBuild Projects="ch.087\ch087.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch087:Make">
+        <MSBuild Projects="ch.087\ch087.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ch088">
+        <MSBuild Projects="ch.088\ch088.dproj"/>
+    </Target>
+    <Target Name="ch088:Clean">
+        <MSBuild Projects="ch.088\ch088.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ch088:Make">
+        <MSBuild Projects="ch.088\ch088.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ch001;ch002;ch003;ch004;ch005;ch006;ch007;ch008;ch009;ch010;ch011;ch012;ch013;ch014;ch015;ch016;ch017;ch018;ch019;ch020;ch021;ch022;ch023;ch024;ch025;ch026;ch027;ch028;ch029;ch030;ch031;ch032;ch033;ch034;ch035;ch036;ch037;ch038;ch039;ch040;ch041;ch042;ch043;ch044;ch045;ch046;ch047;ch048;ch049;ch050;ch051;ch052;ch053;ch054;ch055;ch056;ch057;ch058;ch059;ch060;ch061;ch062;ch063;ch064;ch065;ch066;ch067;ch068;ch069;ch070;ch071;ch072;ch073;ch074;ch075;ch076;ch077;ch078;ch079;ch080"/>
+        <CallTarget Targets="ch001;ch002;ch003;ch004;ch005;ch006;ch007;ch008;ch009;ch010;ch011;ch012;ch013;ch014;ch015;ch016;ch017;ch018;ch019;ch020;ch021;ch022;ch023;ch024;ch025;ch026;ch027;ch028;ch029;ch030;ch031;ch032;ch033;ch034;ch035;ch036;ch037;ch038;ch039;ch040;ch041;ch042;ch043;ch044;ch045;ch046;ch047;ch048;ch049;ch050;ch051;ch052;ch053;ch054;ch055;ch056;ch057;ch058;ch059;ch060;ch061;ch062;ch063;ch064;ch065;ch066;ch067;ch068;ch069;ch070;ch071;ch072;ch073;ch074;ch075;ch076;ch077;ch078;ch079;ch080;ch081;ch082;ch083;ch084;ch085;ch086;ch087;ch088"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ch001:Clean;ch002:Clean;ch003:Clean;ch004:Clean;ch005:Clean;ch006:Clean;ch007:Clean;ch008:Clean;ch009:Clean;ch010:Clean;ch011:Clean;ch012:Clean;ch013:Clean;ch014:Clean;ch015:Clean;ch016:Clean;ch017:Clean;ch018:Clean;ch019:Clean;ch020:Clean;ch021:Clean;ch022:Clean;ch023:Clean;ch024:Clean;ch025:Clean;ch026:Clean;ch027:Clean;ch028:Clean;ch029:Clean;ch030:Clean;ch031:Clean;ch032:Clean;ch033:Clean;ch034:Clean;ch035:Clean;ch036:Clean;ch037:Clean;ch038:Clean;ch039:Clean;ch040:Clean;ch041:Clean;ch042:Clean;ch043:Clean;ch044:Clean;ch045:Clean;ch046:Clean;ch047:Clean;ch048:Clean;ch049:Clean;ch050:Clean;ch051:Clean;ch052:Clean;ch053:Clean;ch054:Clean;ch055:Clean;ch056:Clean;ch057:Clean;ch058:Clean;ch059:Clean;ch060:Clean;ch061:Clean;ch062:Clean;ch063:Clean;ch064:Clean;ch065:Clean;ch066:Clean;ch067:Clean;ch068:Clean;ch069:Clean;ch070:Clean;ch071:Clean;ch072:Clean;ch073:Clean;ch074:Clean;ch075:Clean;ch076:Clean;ch077:Clean;ch078:Clean;ch079:Clean;ch080:Clean"/>
+        <CallTarget Targets="ch001:Clean;ch002:Clean;ch003:Clean;ch004:Clean;ch005:Clean;ch006:Clean;ch007:Clean;ch008:Clean;ch009:Clean;ch010:Clean;ch011:Clean;ch012:Clean;ch013:Clean;ch014:Clean;ch015:Clean;ch016:Clean;ch017:Clean;ch018:Clean;ch019:Clean;ch020:Clean;ch021:Clean;ch022:Clean;ch023:Clean;ch024:Clean;ch025:Clean;ch026:Clean;ch027:Clean;ch028:Clean;ch029:Clean;ch030:Clean;ch031:Clean;ch032:Clean;ch033:Clean;ch034:Clean;ch035:Clean;ch036:Clean;ch037:Clean;ch038:Clean;ch039:Clean;ch040:Clean;ch041:Clean;ch042:Clean;ch043:Clean;ch044:Clean;ch045:Clean;ch046:Clean;ch047:Clean;ch048:Clean;ch049:Clean;ch050:Clean;ch051:Clean;ch052:Clean;ch053:Clean;ch054:Clean;ch055:Clean;ch056:Clean;ch057:Clean;ch058:Clean;ch059:Clean;ch060:Clean;ch061:Clean;ch062:Clean;ch063:Clean;ch064:Clean;ch065:Clean;ch066:Clean;ch067:Clean;ch068:Clean;ch069:Clean;ch070:Clean;ch071:Clean;ch072:Clean;ch073:Clean;ch074:Clean;ch075:Clean;ch076:Clean;ch077:Clean;ch078:Clean;ch079:Clean;ch080:Clean;ch081:Clean;ch082:Clean;ch083:Clean;ch084:Clean;ch085:Clean;ch086:Clean;ch087:Clean;ch088:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ch001:Make;ch002:Make;ch003:Make;ch004:Make;ch005:Make;ch006:Make;ch007:Make;ch008:Make;ch009:Make;ch010:Make;ch011:Make;ch012:Make;ch013:Make;ch014:Make;ch015:Make;ch016:Make;ch017:Make;ch018:Make;ch019:Make;ch020:Make;ch021:Make;ch022:Make;ch023:Make;ch024:Make;ch025:Make;ch026:Make;ch027:Make;ch028:Make;ch029:Make;ch030:Make;ch031:Make;ch032:Make;ch033:Make;ch034:Make;ch035:Make;ch036:Make;ch037:Make;ch038:Make;ch039:Make;ch040:Make;ch041:Make;ch042:Make;ch043:Make;ch044:Make;ch045:Make;ch046:Make;ch047:Make;ch048:Make;ch049:Make;ch050:Make;ch051:Make;ch052:Make;ch053:Make;ch054:Make;ch055:Make;ch056:Make;ch057:Make;ch058:Make;ch059:Make;ch060:Make;ch061:Make;ch062:Make;ch063:Make;ch064:Make;ch065:Make;ch066:Make;ch067:Make;ch068:Make;ch069:Make;ch070:Make;ch071:Make;ch072:Make;ch073:Make;ch074:Make;ch075:Make;ch076:Make;ch077:Make;ch078:Make;ch079:Make;ch080:Make"/>
+        <CallTarget Targets="ch001:Make;ch002:Make;ch003:Make;ch004:Make;ch005:Make;ch006:Make;ch007:Make;ch008:Make;ch009:Make;ch010:Make;ch011:Make;ch012:Make;ch013:Make;ch014:Make;ch015:Make;ch016:Make;ch017:Make;ch018:Make;ch019:Make;ch020:Make;ch021:Make;ch022:Make;ch023:Make;ch024:Make;ch025:Make;ch026:Make;ch027:Make;ch028:Make;ch029:Make;ch030:Make;ch031:Make;ch032:Make;ch033:Make;ch034:Make;ch035:Make;ch036:Make;ch037:Make;ch038:Make;ch039:Make;ch040:Make;ch041:Make;ch042:Make;ch043:Make;ch044:Make;ch045:Make;ch046:Make;ch047:Make;ch048:Make;ch049:Make;ch050:Make;ch051:Make;ch052:Make;ch053:Make;ch054:Make;ch055:Make;ch056:Make;ch057:Make;ch058:Make;ch059:Make;ch060:Make;ch061:Make;ch062:Make;ch063:Make;ch064:Make;ch065:Make;ch066:Make;ch067:Make;ch068:Make;ch069:Make;ch070:Make;ch071:Make;ch072:Make;ch073:Make;ch074:Make;ch075:Make;ch076:Make;ch077:Make;ch078:Make;ch079:Make;ch080:Make;ch081:Make;ch082:Make;ch083:Make;ch084:Make;ch085:Make;ch086:Make;ch087:Make;ch088:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
